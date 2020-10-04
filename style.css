@@ -29,5 +29,9 @@
 .container {
     display: flex;
     border: 5px solid goldenrod;
-    height: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
+    /* flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse; */
 }
