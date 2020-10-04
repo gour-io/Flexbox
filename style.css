@@ -30,17 +30,45 @@
     display: flex;
     border: 5px solid firebrick;
     height: 100vh;
-    flex-wrap: wrap;
     /* align-content: stretch;  <---- this is default */
-    align-content: center;
+    align-items: flex-start;
 
 }
 
 .box {
     width: 33.33%;
 }
+.box-1 {
+    align-self: center;
+}
+.box-2{
+    align-self: stretch;
+}
+.box-3 {
+    align-self: center;
+}
+.box-4{
+    align-self: stretch;
+}
+.box-5 {
+    align-self: center;
+}
+
+.box-6{
+    align-self: stretch;
+}
+.box-7 {
+    align-self: center;
+}
+
+.box-8{
+    align-self: stretch;
+}
+
+.box-9 {
+    align-self: flex-end;
+}
+
+/* using align-self position an flex element indivisually */
 
 
-/* justify-content ---- works on main axis
-   align-content ---- works on cross axis */
-/* align-content have all the properties that justify-content contain. */
