@@ -28,28 +28,16 @@
 
 .container {
     display: flex;
-    border: 5px solid goldenrod;
-    min-height: 100vh;
-
-    /* flex-direction          main-axis             cross-axis */
-    /* --------------          ---------             ---------- */
-    /* column                  top-to-bottom         left-to-right */
-    /* row                     left-to-right         top-to-bottom */
-    /* column-reverse          bottom-to-top         left-to-right */
-    /* row-reverse             right-to-left         top-to-bottom */
-
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse;
-    flex-direction: row;
-    flex-direction: row-reverse; */
-
-    /* flex-wrap: nowrap;     */
-    flex-wrap: wrap;
-    /* flex-wrap: wrap-reverse; */
 }
 
 .box {
-    width: 33.333%;
-    padding: 10px;
-    border: 5px solid goldenrod;
+    flex: 1;
+}
+
+.box-3 {
+    order: 1;
+}
+
+.box-5 {
+    order: -1;
 }
