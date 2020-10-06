@@ -4,12 +4,17 @@
 /*box-sizing: border-box*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /*some default style to make box visible*/
 .box {
     color: #ffffff;
     font-size: 30px;
     text-align: center;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
     padding: 10px;
 }
 
@@ -20,55 +25,19 @@
 .box-4 {background: cornflowerblue;}
 .box-5 {background: crimson;}
 .box-6 {background: cyan;}
-.box-7 {background: darkgoldenrod;}
-.box-8 {background: darkgreen;}
-.box-9 {background: darkorange;}
-.box-10 {background: deeppink;}
-
 
 .container {
     display: flex;
-    border: 5px solid firebrick;
-    height: 100vh;
-    /* align-content: stretch;  <---- this is default */
-    align-items: flex-start;
-
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    /* flex-wrap: wrap; */
 }
 
 .box {
-    width: 33.33%;
-}
-.box-1 {
-    align-self: center;
-}
-.box-2{
-    align-self: stretch;
-}
-.box-3 {
-    align-self: center;
-}
-.box-4{
-    align-self: stretch;
-}
-.box-5 {
-    align-self: center;
+    flex: 1;
 }
 
-.box-6{
-    align-self: stretch;
+.box-2 {
+    flex: 2;
 }
-.box-7 {
-    align-self: center;
-}
-
-.box-8{
-    align-self: stretch;
-}
-
-.box-9 {
-    align-self: flex-end;
-}
-
-/* using align-self position an flex element indivisually */
-
 
