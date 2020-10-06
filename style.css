@@ -1,49 +1,77 @@
-/*css normalize*/
-/* article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;} */
+html {
+    box-sizing: border-box;
+}
 
-/*box-sizing: border-box*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body {
+    font-family: sans-serif;
+    margin: 0;
+    /* background-image: linear-gradient(260deg, #2676ac 0%, #c16ecf 100%); */
+    background: url(./cool-background.png) repeat 0 0;
+}
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    
+    padding: 20px 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Flex Container */
+.flex-nav ul {
+    border:1px solid black;
+    list-style: none;
     margin: 0;
     padding: 0;
+    display:flex;
+  }
+  
+  /* Flex Item */
+  .flex-nav li {
+    flex: 3;
+  }
+  
+  .flex-nav .social {
+    flex: 1;
+  }
+  
+
+@media all and (max-width: 1000px) {
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li {
+        flex: 1 1 50%;
+    }
+
+    .flex-nav .social {
+        flex: 1 1 25%;
+    }
 }
 
-/*some default style to make box visible*/
-.box {
-    color: #000000;
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 1px 1px 0 rgb(202, 202, 202);
-    padding: 10px;
-}
-
-/* Colors for each box */
-.box-1 {background: chartreuse;}
-.box-2 {background: chocolate;}
-.box-3 {background: coral;}
-.box-4 {background: cornflowerblue;}
-.box-5 {background: crimson;}
-.box-6 {background: cyan;}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 100vh;
-    border: 10px solid goldenrod;
-}
-
-.box {
-    
-    flex-basis: 250px;
-   flex-grow: 1;
-}
-
-.box-3 {
-    flex-grow: 5;
-}
-
-.box-4 {
-    flex-basis: 100px;
+@media all and (max-width: 500px) {
+    .flex-nav li {
+        flex-basis: 100%;
+    }
 }
