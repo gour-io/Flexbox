@@ -28,16 +28,20 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
-    /* justify-content: flex-end; */
-    /* flex-wrap: wrap; */
 }
 
-.box {
-    flex: 1;
+/* flex = flex-grow + flex-shrink + flex-basis */
+
+.box-1 {
+    /* flex-grow: 1;
+    flex-shrink: 5;
+    flex-basis: 400px; */
+    flex: 1 5 400px;
 }
 
 .box-2 {
-    flex: 2;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px; */
+    flex: 1 1 400px;
 }
-
